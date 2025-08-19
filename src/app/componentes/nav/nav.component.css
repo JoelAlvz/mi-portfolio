@@ -1,0 +1,123 @@
+.header {
+    background-image: linear-gradient(
+      224deg,
+      hsl(240deg 100% 50%) 2%,
+      hsl(249deg 100% 59%) 63%,
+      hsl(252deg 99% 64%) 78%,
+      hsl(253deg 98% 68%) 87%,
+      hsl(254deg 96% 73%) 92%,
+      hsl(253deg 93% 77%) 96%,
+      hsl(251deg 89% 81%) 98%,
+      hsl(246deg 81% 85%) 99%,
+      hsl(232deg 68% 88%) 100%,
+      hsl(200deg 53% 90%) 100%
+    );
+    
+      border-bottom: solid;
+      border-color:#949494;
+      
+  }
+   .tittle-container{
+    display: flex;
+    padding-top: 20px;
+    padding-left: 100px;
+    padding-right: 100px;
+    margin: 60px;
+    margin-top: 0;
+    margin-bottom: 0;
+    justify-content: center;
+  }
+
+/*Estilos titulo de la página y texto del header*/
+ .name{
+    margin-right: 100px; 
+  }
+ .name h1.big-tittle{
+   font-size: 80px;
+   font-weight: bold;
+   padding-bottom: 15px;
+   width: 100%;
+    color: white;
+    margin: 0;
+    padding-top: 2rem;
+  }
+
+  .name h2{color: white;}
+
+   .foto-perfil {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  margin-bottom: 1rem;
+  align-self: center;
+}
+
+
+.navbar{
+  display:flex;
+  justify-content: space-between;
+  padding-inline-end: 40px;
+  list-style-type: none;
+}
+
+li a {
+  font-size: 20px;
+  text-decoration: none;
+  color: inherit;
+}
+
+nav a:hover, nav a.active{
+  text-decoration: underline;
+}
+
+
+.main-content {
+  display: flex;
+  gap: 30px;
+  padding: 20px;
+  align-items: flex-start;
+}
+
+/* Columnas */
+.left-column,
+.right-column {
+  flex: 1;
+}
+
+
+@media (max-width: 800px) {
+  .tittle-container {
+    flex-direction: column; 
+    align-items: center;     
+    text-align: center;      
+    padding: 0;
+  }
+  .foto-perfil{
+     width: 180px;
+    height: 180px;
+  }
+  .name { margin: 0; }
+
+  .name h1.big-tittle {
+    font-size: 40px;
+  }
+
+  .main-content {
+    flex-direction: column;
+  }
+
+  .left-column,
+  .right-column {
+    width: 100%;
+  }
+
+  .navbar{
+    display: block;
+  }
+  li {
+  text-align: center;
+  padding: 10px;
+  }
+}
