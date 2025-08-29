@@ -1,11 +1,11 @@
 <div class="contenedor">
     <div class="contacto">
     <h2>Contacto</h2>
-        <p>Número de teléfono: 692 98 33 05</p>
-        <p>Correo electrónico: joelalvareznuevo&#64;gmail.com</p>
+        <p>Número de teléfono: <a href="tel:+34692983305">692 98 33 05</a></p>
+        <p>Correo electrónico: <a href="mailto:joelalvareznuevo@gmail.com">joelalvareznuevo&#64;gmail.com</a></p>
         
         
-    <button (click)="abrirPopup()">Obtener mi CV</button>
+    <button class="btn" (click)="abrirPopup()">Obtener mi CV</button>
 
 
 <div class="popup" *ngIf="mostrarPopup">
@@ -17,7 +17,7 @@
         <input type="email" [(ngModel)]="email" name="email" placeholder="Tu correo" />
         <button (click)="enviarCorreo()">Enviar por correo</button>
       </div>
-        <p>O</p>
+        <p class="opciones">O</p>
       <div>
         <button (click)="descargarCV()">Descargar directamente</button>
       </div>
