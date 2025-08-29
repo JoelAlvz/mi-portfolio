@@ -1,1 +1,24 @@
-<p>proyectos works!</p>
+<div class="slider">
+  <div class="proyecto" *ngIf="proyectos[indexActual] as p">
+    <h2>{{ p.nombre }}</h2>
+    <p style="min-height: 1.5em;">{{ p.ano }}</p>
+   
+    <div class="github-link">
+      <a *ngIf="p.github; else emptyGithub" [href]="p.github" target="_blank">Ver en GitHub</a>
+      <ng-template #emptyGithub>
+        <span style="visibility:hidden;">Ver en GitHub</span>
+      </ng-template>
+    </div>
+
+    <div class="imagen-con-controles">
+      <img [src]="p.imagen" alt="Proyecto" />
+      <button class="btn prev" (click)="anterior()">&#10094;</button>
+      <button class="btn next" (click)="siguiente()">&#10095;</button>
+    </div>
+
+   
+ <p>{{ p.descripcion }}</p>
+
+    
+  </div>
+</div>

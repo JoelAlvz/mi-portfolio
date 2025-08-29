@@ -28,7 +28,7 @@
     justify-content: center;
   }
 
-/*Estilos titulo de la página y texto del header*/
+
  .name{
     margin-right: 100px; 
   }
@@ -69,7 +69,8 @@ li a {
 }
 
 nav a:hover, nav a.active{
-  text-decoration: underline;
+    color: #4e54c8;
+  border-bottom: 2px solid #4e54c8;
 }
 
 
@@ -80,7 +81,7 @@ nav a:hover, nav a.active{
   align-items: flex-start;
 }
 
-/* Columnas */
+
 .left-column,
 .right-column {
   flex: 1;

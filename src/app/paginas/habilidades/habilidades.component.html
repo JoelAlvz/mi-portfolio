@@ -1,1 +1,30 @@
-<p>habilidades works!</p>
+ <h2>Habilidades técnicas</h2>
+<div class="contenedor">
+    <div class="columna">
+        <h3>Lenguajes y marcado</h3>
+        <ul>
+            <li *ngFor="let competencia of compentencias.lenguajes" class="competencias">
+            <img [src]="competencia.logo" [alt]="competencia.nombre + ' logo'" class="teclogo">
+            {{ competencia.nombre }}
+            </li>
+        </ul>
+    </div>
+    <div class="columna">
+        <h3>Frameworks y librerías</h3>
+        <ul>
+            <li *ngFor="let competencia of compentencias.frameworks" class="competencias">
+            <img [src]="competencia.logo" [alt]="competencia.nombre + ' logo'" class="teclogo">
+            {{ competencia.nombre }}
+            </li>
+        </ul>
+    </div>
+    <div class="columna">
+        <h3>Control de versiones</h3>
+        <ul>
+            <li *ngFor="let competencia of compentencias.controlVersiones" class="competencias">
+            <img [src]="competencia.logo" [alt]="competencia.nombre + ' logo'" class="teclogo">
+            {{ competencia.nombre }}
+            </li>
+        </ul>
+    </div>
+</div>

@@ -1,1 +1,43 @@
-<p>contacto works!</p>
+<div class="contenedor">
+    <div class="contacto">
+    <h2>Contacto</h2>
+        <p>Número de teléfono: 692 98 33 05</p>
+        <p>Correo electrónico: joelalvareznuevo&#64;gmail.com</p>
+        
+        
+    <button (click)="abrirPopup()">Obtener mi CV</button>
+
+
+<div class="popup" *ngIf="mostrarPopup">
+  <div class="popup-content">
+    <h3>Elige cómo quieres recibir mi CV</h3>
+
+    <div class="opciones">
+      <div>
+        <input type="email" [(ngModel)]="email" name="email" placeholder="Tu correo" />
+        <button (click)="enviarCorreo()">Enviar por correo</button>
+      </div>
+        <p>O</p>
+      <div>
+        <button (click)="descargarCV()">Descargar directamente</button>
+      </div>
+    </div>
+
+    <p *ngIf="mensaje">{{ mensaje }}</p>
+
+    <button class="cerrar" (click)="cerrarPopup()">Cerrar</button>
+  </div>
+</div>
+
+
+    </div>
+
+    <div class="ubicacion">
+        <h3>Ciudad: Ourense</h3>
+        <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d40441.19752459507!2d-7.906130146985599!3d42.33170833267271!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd2ffeb5bc5378eb%3A0x295326a374bca39c!2sOurense%2C%20Orense%2C%20Ourense!5e1!3m2!1ses!2ses!4v1755253829667!5m2!1ses!2ses"
+                width="250" height="250" style="border:0;border-radius: 20px;" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+    </div>
+</div>

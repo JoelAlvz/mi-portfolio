@@ -1,0 +1,12 @@
+h2{
+    text-align: center;
+}
+
+p{
+    font-size: large;
+
+    line-height: 1.8;
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: justify;
+}
