@@ -34,7 +34,7 @@ export class ContactoComponent {
 
     this.emailService.sendEmail(this.email).subscribe({
       next: () => {
-        this.mensaje = 'CV enviado con éxito!';
+        this.mensaje = 'CV enviado con éxito! (Revisa Spam)';
       },
       error: () => {
         this.mensaje = 'Error al enviar el correo.';

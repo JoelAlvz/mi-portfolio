@@ -1,22 +1,68 @@
-h2{
-    text-align: center;
+.sobre-mi {
+  max-width: 1200px;
+  margin: 50px auto;
+  padding: 30px;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+
 }
 
-p{
-    font-size: large;
-
-    line-height: 1.8;
-    max-width: 1000px;
-    margin: 0 auto;
-    text-align: justify;
+.sobre-mi h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 10px;
 }
-.contenedor{
 
-      background-color: #f9f9f9; 
-  max-width: 1000px;        
-  margin: 40px auto;       
-  padding: 30px;            
-  border-radius: 12px;    
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+.sobre-mi .intro {
+  text-align: center;
+  font-size: 1.1rem;
+  margin-bottom: 30px;
+  color: #555;
+}
 
+.sobre-mi .grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 25px;
+}
+
+.sobre-mi .bloque {
+  background: #f9f9f9;
+  border-radius: 12px;
+  padding: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.sobre-mi .bloque:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+}
+
+.sobre-mi h3 {
+  margin-bottom: 10px;
+ color: #4e54c8;
+  font-size: 1.2rem;
+}
+
+.sobre-mi p, .sobre-mi ul {
+  color: #666;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.sobre-mi .tech {
+  background: #e8f0ff;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+
+@media (max-width: 768px) {
+  .sobre-mi .grid {
+    grid-template-columns: 1fr;
+  }
 }

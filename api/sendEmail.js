@@ -6,8 +6,7 @@ export default async function handler(req, res) {
   if (req.method !== "POST") {
     return res.status(405).json({ error: "Método no permitido" });
   }
-  console.log("LONGITUD PUBLIC KEY:", process.env.MJ_APIKEY_PUBLIC?.length);
-  console.log("LONGITUD PRIVATE KEY:", process.env.MJ_APIKEY_PRIVATE?.length);
+
   try {
     const { email } = req.body;
 
