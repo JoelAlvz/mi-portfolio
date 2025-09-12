@@ -19,7 +19,7 @@ h3{color: #4e54c8 ;}
   display: flex;
   gap: 20px;
   flex-wrap: wrap;     
-  justify-content: space-between;
+  justify-content: center;
   margin-top: 20px;
 }
 

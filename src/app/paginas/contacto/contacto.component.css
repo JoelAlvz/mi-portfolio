@@ -9,6 +9,8 @@ h3{color: #4e54c8;}
   justify-items: center; 
   align-items: start; 
   padding: 40px; 
+  padding-right: 10px;
+  padding-left: 10px;
   margin: 0 auto; 
 }
 .mapa{
@@ -40,7 +42,7 @@ h3{color: #4e54c8;}
   }
   .contacto,
 .ubicacion {
-  width: 55%; 
+  width: 60%; 
  
   }
 }
@@ -53,7 +55,7 @@ h3{color: #4e54c8;}
     border-radius: 12px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     overflow: hidden; 
-    padding: 0;
+
     margin-top: 5%;
     padding: 30px;
   }
